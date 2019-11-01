@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # coding: utf-8
-import urllib.request as req
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score

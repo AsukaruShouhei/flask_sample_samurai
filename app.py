@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# coding: utf-8
 from flask import Flask, render_template
 import pandas as pd
 import iris_learn
