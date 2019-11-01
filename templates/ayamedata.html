@@ -1,10 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block body %}
+    <h2>
+        <p> きちんと読み込んでいますかね。</p>
+        <a href="/accuracy">
+            <button type="button" class="btn btn-secondary">それでは、機会学習を使って正解率を出してみましょう</button>
+        </a>
+    </h2>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">SepalLength</th>
+            <th scope="col">SepalWidth</th>
+            <th scope="col">PetalLength</th>
+            <th scope="col">PetalWidth</th>
+            <th scope="col">Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for i in data %}
+        <tr>
+            <td>{{ i[0] }}</td>
+            <td>{{ i[1] }}</td>
+            <td>{{ i[2] }}</td>
+            <td>{{ i[3] }}</td>
+            <td>{{ i[4] }}</td>
+            <td>{{ i[5] }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

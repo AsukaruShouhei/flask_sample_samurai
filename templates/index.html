@@ -1,10 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block body %}
+    <h1>こんにちは、本格的なFlaskアプリ制作へようこそ</h1>
+    <br>
+    <p>知っ得＿情報</p>
+    <ul>
+        <li>
+            <a href="https://pleiades.io/help/pycharm/reformat-and-rearrange-code.html#tabs_and_indents" target="_blank">
+                PyCharmでインデントを揃える方法
+            </a>
+        </li>
+        <li>
+            flask run --debugger --reload
+        </li>
+        <li>
+            <a href="https://www.subarunari.com/entry/2018/03/10/%E3%81%84%E3%81%BE%E3%81%95%E3%82%89%E3%81%AA%E3%81%8C%E3%
+        82%89_Flask_%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%BE%E3%81%A8%E3%82%81%E3%82%8B_%E3%80%9
+        CDebugger%E3%80%9C" target="_blank">
+                デバッグモードを有効にする
+            </a>
+        </li>
+    </ul>
+    <hr>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h4>
+        <p>まずはボタンを押してアヤメの分析を行うCSVファイルを読み込んで画面に表示してみよう</p>
+        <a href="/ayame"><button type="button" class="btn btn-info">アヤメのCSVファイル読み込み</button></a>
+    </h4>
+{% endblock %}
